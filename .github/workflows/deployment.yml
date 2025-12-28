@@ -131,7 +131,7 @@ jobs:
       - name: Scan Docker image using Trivy for vulnabiliy check
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:sha-${{ github.sha }}
+          image-ref: ${{ env.REGISTRY }}/${{github.repository_owner}}/react-app-dev-sec-ops-pipeline:sha-${{ github.sha }}
           format: "table"
           exit-code: "1"
           ignore-unfixed: true
