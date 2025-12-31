@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: tic-tac-toe
-          image: ghcr.io/iam-aniket-dutta/react-app-dev-sec-ops-pipeline:sha-d03241d73020ade27d3264fe5cf79791899d2843
+          image: ghcr.io/iam-aniket-dutta/react-app-dev-sec-ops-pipeline:sha-26ed45e5e1ebc38fbb03eaef5464d774391e4303
           # Image will be automatically updated by CI/CD pipeline
           imagePullPolicy: Always
           ports:
